@@ -1,59 +1,46 @@
-const lado = document.getElementById("idCuadrado");
-const resultado = document.getElementById("idParrafo");
-const titulo = document.getElementById("nameFigure");
-var contenido = "";
+const lado = document.getElementById("valorMedida");
+const resultado = document.getElementById("resultado");
+const titulo = document.getElementById("figura");
+var contenido = ""; 
 
-function onCheCua(){
+function onCuadrado(){
     titulo.innerText = "CUADRADO";
-    const cheCir = document.getElementById("idCheCir");
-   cheCir.checked = false;
+    const box2 = document.getElementById("idCheck2");
+   box2.checked = false;
    contenido = titulo.innerHTML;
 
 }
-function onCheCir(){
+function onCirculo(){
     titulo.innerText = "CIRCULO";
-    const cheCua = document.getElementById("idCheCua");
-   cheCua.checked = false;
+    const box1 = document.getElementById("idCheck1");
+   box1.checked = false;
    contenido = titulo.innerHTML;
 }
 
 function calcularPerimetro(){
 
     if (contenido === 'CUADRADO') {
-        let perimetro = lado.value * 4;
-        resultado.innerText= "El perimetro del cuadrado es: " + perimetro;
+        resultado.innerText=`El perimetro del cuadrado es: ${lado.value * 4}`;
     }if (contenido === 'CIRCULO') {
-        let perimetro= Math.round((Math.PI * 2) * lado.value);
-        resultado.innerText = "El perimetro del circulo es: " + perimetro;
+        resultado.innerText = `El perimetro del circulo es: ${Math.round((Math.PI * 2) * lado.value)}`;
     }
 }
 
 function calcularArea(){
 
     if (contenido === 'CUADRADO') {
-        let area = lado.value * lado.value;
-        resultado.innerText= "El Area del cuadrado es: " + area;
+        resultado.innerText= `El Area del cuadrado es: ${lado.value * lado.value}`;
     }if (contenido === 'CIRCULO') {
-        let area = Math.round(Math.PI * Math.pow(lado.value,2));
-        resultado.innerText = "El area del circulo es: " + area;
+        resultado.innerText =`El area del circulo es:${Math.round(Math.PI * Math.pow(lado.value,2))}`;
     }
     
 }
 
-const lista = [200,600,500,800].sort((a,b)=>{
-    if (a === b) {
-        return 0;
-    }if (a < b) {
-        return -1
-    }else{
-        return 1;
-    }
-});
 
 function calcularMedia(){
     let suma = lista.reduce((sumaElement,element)=>sumaElement+element);
     const media = suma / lista.length;
-    return media;
+    result.innerText = media;
 }
 
 function esPar(){

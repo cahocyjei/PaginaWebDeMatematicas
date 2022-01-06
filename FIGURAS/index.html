@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/FIGURAS/styles.css">
+    <title>Figuras Geometricas</title>
+</head>
+<body>
+    <header>
+      <div>
+        <img src="/img/logo.gif" alt="logo">
+      </div>
+      <h2>FIGURAS GEOMETRICAS</h2>
+    </header>
+    <h2 style="text-align: center;font-size: 2rem;">Halla el Perimetro y el Area de tu figura Geometrica</h2>
+    <section class="container">
+      <div class="col1">
+        <h2 style="text-align: center">Escoge la Figura</h2>
+        <form style="display: flex; justify-content: space-around;" action="">
+          <ul>
+            <li style="font-size: 1rem;">Cuadrado<input type="checkbox" name="" id="idCheck1" onclick="onCuadrado()"></li>
+            <li style="font-size: 1rem;">Circulo <input type="checkbox" name="" id="idCheck2" onclick="onCirculo()"></li>
+          </ul>
+          <p style="align-self: center;font-size: 1.5rem;" id= "figura"></p>
+        </form>
+      </div>
+      <div class="col2">
+        <form action="">
+          <div class="col">
+            <h2 style="text-align: center;">Calcula</h2>
+            <label style="margin-left: 1rem; color: white;font-size: 1.5rem;" id= "medida" for="medida">Introduce una Medida</label>
+            <input style="width: 3rem;height: 1.5rem; border-radius: .5rem;" type="number" id="valorMedida">
+            <p style="font-size: 1.5rem;color: rgb(20, 6, 102);text-align: center;" id= "resultado"></p>
+            <div class="row">
+              <input onclick="calcularPerimetro()" style="background-color: blue;height: 2rem;color: aliceblue;border-radius: .5rem;" type="button" value="Perimetro">
+              <input onclick="calcularArea()" style="background-color: brown;height: 2rem;color: white;border-radius: .5rem;" type="button" value="Area">
+            </div>
+          </div>
+        </form>
+      </div>      
+    </section>
+    <script src="/FIGURAS/Figura.js"></script>
+
+    <footer>
+     <h6 style="align-self: center;color: white;">Contacto: </h6>
+     <p style="color: white; align-self: center;">Vista hermosa Cra 60 D, Dg 29 cll 9 Mz 6 - L 8 </p>
+      <a href="">cahocyjei@gmail.com</a>
+    </footer>
+    
+</body>
+</html>
