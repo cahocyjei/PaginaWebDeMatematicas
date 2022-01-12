@@ -8,17 +8,16 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build":"npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build":"node  build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cahocyjei/PaginaWebDeMatematicas.git"
+    "url": "git+https://git@github.com:cahocyjei/PaginaWebDeMatematicas.git"
   },
   "author": "Omar Cabarcas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cahocyjei/PaginaWebDeMatematicas/issues"
+    "url": "git+https://git@github.com:cahocyjei/PaginaWebDeMatematicas.git"
   },
   "homepage": "http://cahocyjei.github.io/matematicas"
 }
