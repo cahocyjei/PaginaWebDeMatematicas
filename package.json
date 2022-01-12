@@ -1,0 +1,19 @@
+{
+  "name": "matematicas",
+  "version": "1.0.0",
+  "description": "Página para hallar el Perimetro y el Area de cualquier figura geometrica",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cahocyjei/matematicas.git"
+  },
+  "author": "Omar Cabarcas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cahocyjei/matematicas/issues"
+  },
+  "homepage": "https://github.com/cahocyjei/matematicas#readme"
+}
